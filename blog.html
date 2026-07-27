@@ -1,245 +1,79 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상암 유흥 꿀팁 | 전문가 분석 블로그</title>
-    <meta name="description" content="상암 유흥의 모든 것, 전문가가 분석한 꿀팁과 실제 이용자 리뷰. 2025년 최신 상암 유흥 정보를 데이터 기반으로 제공합니다.">
-    <meta name="keywords" content="상암 유흥, 상암 밤문화, 상암 술집, 상암 클럽, 상암 유흥 꿀팁, 상암 데이트, 상암 핫플레이스">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://t3b06-sa-night-tip.vercel.app/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-sa-night-tip.vercel.app/">
-    <meta property="og:title" content="상암 유흥 꿀팁: 2025년 데이터 기반 가이드">
-    <meta property="og:description" content="전문가가 분석한 상암 유흥 통계, 실제 이용자 리뷰, 비용 효율적인 전략까지. 2025년 최신 상암 밤문화 정보를 제공합니다.">
-    <meta property="og:image" content="https://t3b06-sa-night-tip.vercel.app/og-image.jpg">
-    <meta property="og:locale" content="ko_KR">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://t3b06-sa-night-tip.vercel.app/">
-    <meta property="twitter:title" content="상암 유흥 꿀팁: 2025년 데이터 기반 가이드">
-    <meta property="twitter:description" content="전문가가 분석한 상암 유흥 통계, 실제 이용자 리뷰, 비용 효율적인 전략까지. 2025년 최신 상암 밤문화 정보를 제공합니다.">
-    <meta property="twitter:image" content="https://t3b06-sa-night-tip.vercel.app/twitter-image.jpg">
-    
-    <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body { 
-            font-family: 'Courier New', 'Pretendard', system-ui, -apple-system, monospace;
-            background: #0a0a0a; 
-            color: #e0e0e0; 
-            line-height: 1.6; 
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* ===== TYPOGRAPHY ===== */
-        h1, h2, h3, h4, h5, h6 { 
-            font-family: 'Arial Black', 'Impact', 'Courier New', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-        }
-        h1 { font-size: clamp(2.2rem, 7vw, 4.5rem); color: #00ffff; text-shadow: 0 0 10px #00ffff66; margin-bottom: 1.5rem; }
-        h2 { font-size: clamp(1.6rem, 5vw, 2.8rem); color: #ff00ff; text-shadow: 0 0 8px #ff00ff66; border-left: 6px solid #ff00ff; padding-left: 1rem; margin: 2.5rem 0 1.5rem; }
-        h3 { font-size: 1.4rem; color: #ffff00; text-shadow: 0 0 6px #ffff0066; margin: 2rem 0 1rem; }
-        p { margin-bottom: 1.2rem; font-size: 1.05rem; word-break: break-word; }
-        a { color: #00ffff; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
-        a:hover { border-bottom-color: #00ffff; color: #ff00ff; }
-        strong { color: #fff; font-weight: 900; }
-        
-        /* ===== LAYOUT ===== */
-        .container { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 0 1.5rem; 
-            width: 100%;
-        }
-        .section-gap { padding: 4rem 0; }
-        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        
-        /* ===== COMPONENTS ===== */
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            font-family: 'Arial Black', sans-serif;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            background: transparent;
-            border: 3px solid #00ffff;
-            color: #00ffff;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-        }
-        .btn:hover { background: #00ffff; color: #0a0a0a; border-color: #00ffff; }
-        .btn-secondary { border-color: #ff00ff; color: #ff00ff; }
-        .btn-secondary:hover { background: #ff00ff; color: #0a0a0a; }
-        
-        .card {
-            background: #111;
-            border: 1px solid #333;
-            padding: 2rem;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .card:hover { border-color: #00ffff; box-shadow: 0 0 20px #00ffff33; }
-        .card h3 { margin-top: 0; }
-        
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: 1.5rem 0;
-        }
-        .faq-item:first-child { padding-top: 0; }
-        .faq-question { 
-            font-weight: bold; 
-            font-size: 1.1rem; 
-            color: #ffff00; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            cursor: pointer;
-        }
-        .faq-answer { 
-            margin-top: 1rem; 
-            color: #bbb; 
-            line-height: 1.7; 
-        }
-        
-        /* ===== NAVIGATION ===== */
-        nav {
-            background: #0a0a0a;
-            border-bottom: 2px solid #00ffff;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo { 
-            font-family: 'Arial Black', sans-serif;
-            font-size: 1.8rem;
-            color: #00ffff;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: -0.03em;
-        }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { 
-            color: #e0e0e0; 
-            text-decoration: none; 
-            font-weight: bold;
-            font-size: 1rem;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 0.3rem;
-            transition: border-color 0.3s;
-        }
-        .nav-links a:hover, .nav-links a.active { border-bottom-color: #ff00ff; color: #ff00ff; }
-        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-        .hamburger span { width: 30px; height: 3px; background: #e0e0e0; transition: 0.3s; }
-        
-        /* ===== HERO ===== */
-        .hero {
-            padding: 6rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(circle at 20% 30%, #00ffff11 0%, transparent 70%),
-                        radial-gradient(circle at 80% 70%, #ff00ff11 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .hero h1 { margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; color: #aaa; max-width: 700px; margin: 0 auto 2rem; }
-        
-        /* ===== FOOTER ===== */
-        footer {
-            background: #0a0a0a;
-            border-top: 2px solid #333;
-            padding: 3rem 0;
-            margin-top: auto;
-            text-align: center;
-        }
-        footer p { color: #666; font-size: 0.9rem; }
-        
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .hamburger { display: flex; }
-            .nav-links { 
-                display: none; 
-                position: absolute; 
-                top: 100%; 
-                left: 0; 
-                right: 0; 
-                background: #0a0a0a; 
-                flex-direction: column; 
-                gap: 1rem; 
-                padding: 2rem; 
-                border-bottom: 2px solid #00ffff;
-            }
-            .nav-links.active { display: flex; }
-            .grid-2, .grid-3 { grid-template-columns: 1fr; }
-            .section-gap { padding: 2.5rem 0; }
-        }
-        
-        /* ===== UTILITY ===== */
-        .text-center { text-align: center; }
-        .mt-2 { margin-top: 2rem; }
-        .mb-2 { margin-bottom: 2rem; }
-        .highlight { color: #00ffff; font-weight: bold; }
-        .tel-link { 
-            color: #ff00ff; 
-            border-bottom: 2px dotted #ff00ff; 
-            font-weight: bold;
-        }
-        .tel-link:hover { color: #00ffff; border-bottom-color: #00ffff; }
-        
-        /* ===== STREET BRUTALIST TOUCH ===== */
-        .brutal-border { border: 3px solid #fff; padding: 1.5rem; background: #111; }
-        .strikethrough { text-decoration: line-through; color: #666; }
-    </style>
+<meta charset="UTF-8">
+<title>상암 유흥 꿀팁 — 블로그</title>
+<meta name="description" content="상암 지역의 다양한 유흥 옵션을 인원, 시간대, 목적에 따라 상세히 비교하고, 방문 전 확인해야 할 필수 체크리스트와 상황별 적합성을 안내합니다.">
+<meta name="keywords" content="상암 유흥, 상암 밤문화, 유흥 꿀팁, 상암 클럽, 상암 바, 상암 노래방, 상암 파티">
+<link rel="canonical" href="https://sangam-night-hot.program-school.online/blog.html">
+<meta property="og:title" content="상암 유흥 꿀팁 — 블로그">
+<meta property="og:description" content="인원·시간·목적별 맞춤 유흥 장소 선택 기준과 사전 체크리스트를 제공합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sangam-night-hot.program-school.online/blog.html">
+<meta property="og:image" content="https://sangam-night-hot.program-school.online/assets/og-image.jpg">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+  <h1>상암 유흥 꿀팁 — 블로그</h1>
+</header>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="container nav-container">
-            <a href="/" class="logo">상암 유흥</a>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">홈</a></li>
-                <li><a href="/blog" class="active">블로그</a></li>
-                <li><a href="/review">리뷰</a></li>
-                <li><a href="tel:0200000000" class="tel-link">전화 문의</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="r-grid-w9ht">
+  <ul>
+    <li><a href="/home">홈</a></li>
+    <li><a href="/guide">가이드</a></li>
+    <li><a href="/tips">팁</a></li>
+    <li><a href="/contact">문의</a></li>
+  </ul>
+</nav>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- HERO SECTION -->
-        <section class="hero section-gap">
-            <div class="container">
-                <h1>상암 유흥 꿀팁<br>2025 데이터 기반 가이드</h1>
-                <p>상암 지역 유흥업소 237곳의 2024~2025년 운영 데이터, 이용자
+<main>
+  <section class="r-box-sweq">
+    <h1>상암 유흥의 기본 접근 방식</h1>
+    <p>상암은 최근 몇 년간 문화·예술 공간이 집중된 복합 단지로 성장하면서, 다양한 연령대와 취향을 만족시킬 수 있는 유흥 시설이 풍부합니다. 특히 교통 접근성이 뛰어나고, 주변에 업무 지구가 밀집해 있어 퇴근 후 혹은 주말에 쉽게 방문할 수 있는 장점이 있습니다.</p>
+    <p>하지만 이러한 장점에도 불구하고, 방문 목적에 따라 적절한 장소를 선택하지 않으면 기대 이하의 경험을 할 위험이 있습니다. 본 가이드는 인원 규모, 시간대, 목적 별로 최적의 선택지를 제시하고, 사전에 반드시 확인해야 할 체크리스트를 제공하여 불필요한 실수를 최소화합니다.</p>
+  </section>
+
+  <section class="r-box-sweq">
+    <h1>인원 규모에 따른 장소 선택</h1>
+    <p>소규모(2~4인) 그룹이 자주 찾는 곳은 프라이빗한 분위기의 라운지 바와 고급 레스토랑이 있습니다. 이들 장소는 조용한 대화와 고품질 음료를 중시하는 고객에게 적합하며, 사전 예약을 통해 좌석 확보가 가능합니다.</p>
+    <p>중규모(5~12인) 팀은 프라임 사운드 시스템을 갖춘 클럽이나 대형 노래방을 선호합니다. 이 경우 인원 제한이 있는 경우가 많으니, 사전에 인원 제한을 확인하고, 입장료와 음료 패키지 옵션을 비교하는 것이 중요합니다.</p>
+    <p>대규모(13인 이상) 파티는 전용 파티룸이나 이벤트 홀이 최선의 선택입니다. 상암의 몇몇 호텔과 복합 문화센터는 맞춤형 조명·음향 설비를 제공하며, 음식·음료 패키지를 별도로 계약할 수 있어 원활한 진행이 보장됩니다.</p>
+  </section>
+
+  <section class="r-box-sweq">
+    <h1>시간대별 적합한 옵션</h1>
+    <p>저녁 18시~21시는 식사와 함께 가벼운 음주를 즐기기에 최적의 시간대입니다. 이때는 고급 레스토랑의 와인 바 혹은 퓨전 주점이 분위기와 서비스 면에서 높은 만족도를 제공합니다. 특히 주말 저녁에는 예약이 빨리 마감되므로, 최소 48시간 전 예약을 권장합니다.</p>
+    <p>심야 22시~02시는 클럽과 라운지 바가 활기를 띄는 시간입니다. 이때는 입장 제한과 드레스코드, 그리고 음료 1+1 프로모션 등 다양한 혜택이 적용될 수 있으니, 각 장소의 공식 홈페이지나 SNS를 사전에 확인하는 것이 현명합니다.</p>
+    <p>새벽 02시 이후는 주로 24시간 영업하는 노래방이나 포장마차가 활동합니다. 영업 시간에 따라 가격 변동이 심하므로, 사전 가격표 확인과 함께 현금 결제 여부를 체크하는 것이 좋습니다.</p>
+  </section>
+
+  <section class="r-box-sweq">
+    <h1>목적별 맞춤 장소 추천</h1>
+    <p>네트워킹·팀 빌딩 목적이라면, 사전 예약이 가능한 프라이빗 라운지와 회의실을 겸비한 바가 유리합니다. 이들 장소는 음향 설비와 조명 옵션을 자유롭게 조절할 수 있어 발표와 소통이 원활합니다.</p>
+    <p>데이트·연인과의 로맨틱한 시간은 조용한 분위기의 와인 바와 루프탑 바가 최적입니다. 특히 야경이 보이는 루프탑은 사진 촬영을 위한 배경으로도 활용도가 높아, 사전 예약 시 테라스 좌석을 지정해 두는 것이 좋습니다.</p>
+    <p>친구와 파티를 즐기고자 할 경우, 대형 노래방과 클럽이 가장 인기 있습니다. 이때는 사전 입장권 구매와 함께, 그룹 전용 파티룸을 예약하면 인원 제한 없이 자유롭게 파티를 진행할 수 있습니다.</p>
+  </section>
+
+  <section class="r-box-sweq">
+    <h1>방문 전 필수 체크리스트</h1>
+    <p>① 영업시간 및 입장 제한 여부 확인 – 특히 주말과 공휴일은 운영 시간이 변동될 수 있습니다.<br>② 예약 방식과 취소 정책 – 온라인 예약 시 할인 혜택이 적용되는 경우가 많으며, 취소 시 발생할 수 있는 비용을 미리 파악해 두세요.<br>③ 주차·교통 편의성 – 상암은 지하철 6호선과 버스 노선이 밀집하지만, 일부 시설은 전용 주차장이 제한될 수 있습니다.</p>
+    <p>④ 음료·음식 가격대와 패키지 옵션 – 사전 메뉴 확인을 통해 예상 지출을 계산하고, 1인당 예산을 초과하지 않도록 계획하십시오.<br>⑤ 복장·드레스코드 – 클럽·라운지 바는 종종 정장·스마트 캐주얼을 요구하므로, 사전 확인이 필요합니다.<br>⑥ 안전·보안 – 야간 영업 시설의 경우, 보안 인력 배치와 CCTV 설치 여부를 확인해 안심하고 이용할 수 있습니다.</p>
+  </section>
+
+  <section class="r-box-sweq">
+    <h1>자주 묻는 질문 (FAQ)</h1>
+    <h2>Q1. 상암의 클럽은 사전 예약이 필수인가요?</h2>
+    <p>대부분의 클럽은 입장 인원 제한과 인원 관리 차원에서 사전 예약을 권장합니다. 특히 유명 클럽의 경우, 인기 있는 일요일 밤에 예약이 없으면 입장이 제한될 수 있습니다. 따라서 방문하고자 하는 날짜와 시간대를 미리 확인하고, 온라인 또는 전화 예약을 진행하는 것이 안전합니다.</p>
+    <h2>Q2. 노래방에서 대형 파티룸을 이용하려면 추가 비용이 발생하나요?</h2>
+    <p>네, 일반 노래방 좌석과 달리 대형 파티룸은 전용 설비와 음향 시스템을 제공하기 때문에 별도의 이용료가 부과됩니다. 파티룸 이용료는 시간당 요금과 최소 이용 시간(보통 2시간) 기준으로 책정되며, 음료·음식 패키지를 추가하면 추가 할인이 적용될 수 있습니다. 사전 예약 시 패키지 옵션을 검토하면 비용을 절감할 수 있습니다.</p>
+    <h2>Q3. 상암에서 주류를 구매할 때 현금 결제가 가능한가요?</h2>
+    <p>대부분의 고급 바와 클럽은 카드 결제를 기본으로 하지만, 일부 포장마차나 저가 주점은 현금 결제만을 받는 경우가 있습니다. 현금 사용 여부는 해당 업체의 결제 정책에 따라 달라지므로, 방문 전 전화 문의를 통해 확인하는 것이 바람직합니다.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 상암 유흥 꿀팁 블로그. 모든 권리 보유.</p>
+</footer>
 </body>
 </html>
